@@ -104,7 +104,7 @@ if st.button("Predict"):
         final_ans = data.mode().values[0]
         st.success(final_ans)
 
-        footer_html = """
+        footer = """
 <style>
 .footer {
     position: fixed;
@@ -124,4 +124,4 @@ if st.button("Predict"):
 </div>
 """
 
-st.markdown(footer_html, unsafe_allow_html = True)
+st.markdown(footer, unsafe_allow_html = True)
